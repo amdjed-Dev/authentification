@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/vertical_margin"
+    android:paddingLeft="@dimen/horizontal_margin"
+    android:paddingRight="@dimen/horizontal_margin"
+    android:paddingTop="@dimen/vertical_margin"
+    android:background="@drawable/gradient"
+    tools:contexte=".AjouterUtilisateur">
+
+    <ImageView
+        android:id="@+id/empreinte"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:src="@drawable/print" />
+
+    <TextView
+        android:id="@+id/ajout_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ajouter utilisateure"
+        android:textSize="20sp"
+        style="@style/textView_style" />
+
+    <EditText
+        android:id="@+id/ajout_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:drawableLeft="@drawable/user"
+        android:inputType="textEmailAddress"
+        android:hint="Adresse email"
+        style="@style/editText_style"/>
+
+    <EditText
+        android:id="@+id/ajout_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Mot de passe"
+        android:drawableLeft="@drawable/lock"
+        android:inputType="textPassword"
+        style="@style/editText_style"
+        />
+    <EditText
+        android:id="@+id/confirme_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Confirmer mot de passe "
+        android:drawableLeft="@drawable/lock"
+        android:inputType="textPassword"
+        style="@style/editText_style"
+        />
+
+    <Button
+        android:id="@+id/ajouter"
+        android:text="Ajouter"
+        style="@style/button_style"/>
+
+</LinearLayout>
